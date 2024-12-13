@@ -1,14 +1,15 @@
 # Processing and Analysis
 
-A web application for processing and analyzing data with visualizations using charts and CSV file uploads. Built with Vite, React, and TypeScript.
+A web application for processing and analyzing data with visualizations using charts, CSV file uploads, and other interactive features. Built with Vite, React, and TypeScript.
 
 ## Features
 
 - Real-time data processing
-- Visualize data using charts (Line, Bar, Pie)
-- CSV file upload and parsing
+- Visualize data using **Line**, **Bar**, and **Pie** charts with **Chart.js**
+- CSV file upload and parsing using **PapaParse**
 - Redux state management
-- Responsive UI with Tailwind CSS
+- Responsive UI with **Tailwind CSS**
+- Unit testing with **Jest**
 
 ## Prerequisites
 
@@ -44,3 +45,36 @@ To start the development server, run:
 
 ```bash
 npm run dev
+
+
+## Build
+
+npm run build
+
+
+## Testing
+
+npm run test
+
+
+## Dependencies
+
+### Core Libraries
+- **React** - JavaScript library for building user interfaces
+- **Redux Toolkit** - Simplified Redux development
+- **React-Redux** - Official React bindings for Redux
+- **Chart.js** - A powerful JavaScript charting library for visualizing data
+- **React-Chartjs-2** - React wrapper for **Chart.js**
+- **PapaParse** - A fast and powerful CSV parser for browser and Node.js
+- **UUID** - A library for generating universally unique identifiers
+
+### Development Tools
+- **Vite** - A fast and opinionated build tool for modern web projects
+- **TypeScript** - A strongly typed superset of JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Jest** - JavaScript testing framework
+- **ESLint** - JavaScript linting tool for code quality
+
+
+This README should give a comprehensive overview of your project setup, making it easy for others to understand and contribute to your work. You can further customize the sections based on your project's specific needs!
+
