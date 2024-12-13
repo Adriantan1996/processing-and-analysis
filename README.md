@@ -49,11 +49,13 @@ npm run dev
 
 ## Build
 
+```bash
 npm run build
 
 
 ## Testing
 
+```bash
 npm run test
 
 
