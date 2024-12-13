@@ -45,18 +45,21 @@ To start the development server, run:
 
 ```bash
 npm run dev
+```
 
 
 ## Build
 
 ```bash
 npm run build
+```
 
 
 ## Testing
 
 ```bash
 npm run test
+```
 
 
 ## Dependencies
