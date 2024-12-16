@@ -13,8 +13,10 @@ function App() {
           CSV File Processing And Analysis
         </h1>
         <DataTable />
-        <MeanChart />
-        <WidgetsSelector />
+        <div className="flex">
+          <MeanChart />
+          <WidgetsSelector />
+        </div>
         <DisplayChart />
       </div>
     </Layout>
