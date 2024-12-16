@@ -22,6 +22,7 @@ ChartJS.register(
   Legend
 );
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const options = {
   responsive: true,
   plugins: {
@@ -32,12 +33,18 @@ export const options = {
 };
 
 export interface BarChartProps {
-  chartLabel: string;
-  chartId: string;
-  labels: string[];
-  data: number[];
+  chartLabel: string; // Chart Label string
+  chartId: string; // chart id for filtering and deletion
+  labels: string[]; // X axis Label 
+  data: number[]; // Data
 }
 
+/**
+ * 
+ * @param param0 
+ * useDispatch for deletion of chart via Id
+ * @returns BarChart
+ */
 const BarChart: React.FC<BarChartProps> = ({
   chartLabel,
   chartId,

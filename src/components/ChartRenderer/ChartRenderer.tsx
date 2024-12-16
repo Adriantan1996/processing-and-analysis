@@ -5,6 +5,11 @@ import BarChart from "../BarChart/BarChart";
 import PieChart from "../PieChart/PieChart";
 import useModal from "../hooks/useModal";
 
+/**
+ * @param 
+ * Map Data display according tho the chartType in array
+ * @returns NIL
+ */
 export interface ChartRendererData {
   chartType: ChartType;
   chartId: string;

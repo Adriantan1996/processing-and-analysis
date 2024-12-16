@@ -5,6 +5,7 @@ import { addFile, setActiveFile } from "../../state/uploadSlice";
 import { v4 as uuid } from "uuid";
 import isValidFileExtension from "./utils/isValidFileExtension";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export enum UploadStatus {
   Uploading = "uploading",
   Success = "success",
@@ -46,7 +47,7 @@ const UploadFileCard: React.FC = () => {
           setStatus(UploadStatus.Success); // Set status to success
         } catch (error) {
           setStatus(UploadStatus.Error); // Set status to error
-          setErrorMessage("Failed to upload file. Please try again.");
+          setErrorMessage(`Failed to upload file. Please try again. ${error}`);
         }
       },
       error: (error) => {

@@ -7,6 +7,7 @@ import { deleteChart } from "../../state/chartSlice";
 
 ChartJS.register(ArcElement, Tooltip, Legend, Title);
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const options = {
   responsive: true,
   plugins: {

@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getDataType = (value: any): string => {
   if (!isNaN(Number(value))) return "Number";
 

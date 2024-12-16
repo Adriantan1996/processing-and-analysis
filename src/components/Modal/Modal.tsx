@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { CsvFile } from "../../state/uploadSlice";
-
+import refractorHeaderName from "../DataTable/utils/refractorHeaderName";
+/**
+ * @param 
+ * File data
+ * select colum handler
+ * isModalOpen flag 
+ * openModal function 
+ * closeModal Function
+ * @return
+ */
 export interface ModalProps {
   file: CsvFile | undefined;
   onColumnSelect: (xColumn: string, yColumn: string) => void;
@@ -48,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({
             <option value="">Select a column</option>
             {columns.map((col) => (
               <option key={col} value={col}>
-                {col}
+                {refractorHeaderName(col)}
               </option>
             ))}
           </select>
@@ -66,7 +75,7 @@ const Modal: React.FC<ModalProps> = ({
             <option value="">Select a column</option>
             {columns.map((col) => (
               <option key={col} value={col}>
-                {col}
+                {refractorHeaderName(col)}
               </option>
             ))}
           </select>

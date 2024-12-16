@@ -1,6 +1,7 @@
 import "./App.css";
 import DataTable from "./components/DataTable/DataTable";
 import DisplayChart from "./components/DisplayChart/DisplayChart";
+import MeanChart from "./components/MeanChart/MeanChart";
 import WidgetsSelector from "./components/WidgetsSelector/WidgetsSelector";
 import Layout from "./Layout/Layout";
 
@@ -12,6 +13,7 @@ function App() {
           CSV File Processing And Analysis
         </h1>
         <DataTable />
+        <MeanChart />
         <WidgetsSelector />
         <DisplayChart />
       </div>

@@ -1,4 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { v4 as uuid } from "uuid";
+
 export enum ChartType {
   Line = "Line",
   Bar = "Bar",
@@ -26,7 +28,7 @@ const chartSlice = createSlice({
   reducers: {
     addChart: (state, action: PayloadAction<Omit<ChartData, "id">>) => {
       const newChart: ChartData = {
-        id: `${Date.now()}`, // Generate a unique ID
+        id: `${uuid()}`, // Generate a unique ID
         ...action.payload,
       };
       state.charts.push(newChart);

@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ChipProps {
+export interface ChipProps {
   label: string;
 }
 const Chip: React.FC<ChipProps> = ({ label }) => {
